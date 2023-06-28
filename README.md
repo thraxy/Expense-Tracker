@@ -8,6 +8,7 @@ Expense Tracker is a web application that helps you track your daily expenses, c
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Resources](#resources)
 
 
 ## Features 
@@ -86,6 +87,8 @@ Once completed the changes, stage and commit them with a commit message:
 Push your branch to your forked repository on Github:
 
 ``` git push origin feature/feature-name ```
+
+## Resources
 
 
 
