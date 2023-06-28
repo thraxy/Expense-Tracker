@@ -2,6 +2,8 @@
 
 Expense Tracker is a web application that helps you track your daily expenses, categorize them, and visualize your spending habits. It provides an intuitive interface for users to input their expenses and offer insightful charts to analyze their spending habits.
 
+https://boilerroomexpense.netlify.app/
+
 ## Table of Contents
 - [Features](#features)
 - [Dependencies](#dependencies)
@@ -26,7 +28,7 @@ Expense Tracker is a web application that helps you track your daily expenses, c
 - **React-Router**: A routing library for React applications that enables navigation and routing between different components/pages.
 - **Chart.js**: A popular charting library for creating interactive and visually appealing charts and graphs.
 - **Axios**: A promise-based HTTP client for making API requests from the browser.
-- **Bootstrap**: A CSS framework that provides a collection of styles, components, and utilities for building a responsive and modern web interfaces.
+- **Bootstrap**: A CSS framework that provides a collection of styles, components, and utilities for building responsive and modern web interfaces.
 - **Font Awesome**: A library of scalable vector icons that can be customized and easily added to the application.
 
 ## Installation
