@@ -107,17 +107,18 @@ export default function ViewExpenseData(){
             .then((data) => {
                 alert(data.data);
             });
-
+            alert("Deleted Expense");
+            window.location.reload(false)
+            
+            
 
         }else{
-
+            alert("Did Not Delete Expense")
 
 
         }
         
-        alert("Deleted Expense");
-        window.location.reload(false)
-
+    
 
    }
 
