@@ -76,30 +76,30 @@ def main():
 if __name__ == '__main__':
     # CRUD (Create Read Update Delete) operations
     star_bar = ("**********************************************************"
-                "****************************************************")
+                "****************************************************\n")
     print(
         star_bar +
-        "*\tThis program will check if you have `pip` installed, then it will install `pymongo`."
-        "*\tAfter this it will connect to mongoDB and perform all four CRUD operations on the local database."
-        "*\tIt will display some of this information on the screen, then it will ask you to perform a few simple tasks."
-        "*\tThen it will provide a status."
+        "*\tThis program will check if you have `pip` installed, then it will install `pymongo`.\n"
+        "*\tAfter this it will connect to mongoDB and perform all four CRUD operations on the local database.\n"
+        "*\tIt will display some of this information on the screen, then it will ask you to perform a few simple tasks.\n"
+        "*\tThen it will provide a status.\n"
         + star_bar +
-        "[[press any key to continue]]"
+        "[[press any key to continue]]\n"
     )
     input()
     main()
     print(
         star_bar +
-        "*\tPlease open MongoDB compass."
-        "*\tPlease refresh \"Databases\"."
-        "*\tPlease indicate (Y)es, or (N)o, if you see \"test_1\""
+        "*\tPlease open MongoDB compass.\n"
+        "*\tPlease refresh \"Databases\".\n"
+        "*\tPlease indicate (Y)es, or (N)o, if you see \"test_1\"\n"
         + star_bar
     )
     see_test_1_db = input()
     if see_test_1_db in (affirmative := ["y", "Y", "yes", "YES", "Yes"]):
         print(
             star_bar +
-            "*\tPlease indicate (Y)es, or (N)o, if within \"test_1\" you see a collection ALSO named \"test_1\""
+            "*\tPlease indicate (Y)es, or (N)o, if within \"test_1\" you see a collection ALSO named \"test_1\"\n"
             + star_bar
         )
         see_test_1_collection = input()
@@ -107,33 +107,33 @@ if __name__ == '__main__':
             print(
                 star_bar +
                 "*\tPlease indicate (Y)es, or (N)o, if within the collection \"test_1\" you see a document matching\n"
-                "*\tthe above displayed \"updated collection document\""
+                "*\tthe above displayed \"updated collection document\"\n"
                 + star_bar
             )
             see_document = input()
             if see_document in affirmative:
                 print(
                     star_bar +
-                    "!!!\tThat document SHOULD NOT BE THERE. This means the DELETE operation failed somehow"
+                    "!!!\tThat document SHOULD NOT BE THERE. This means the DELETE operation failed somehow\n"
                     + star_bar
                 )
                 sys.exit(1)
             else:
                 print(
                     star_bar +
-                    "*\tEverything seems good, then. Bye."
+                    "*\tEverything seems good, then. Bye.\n"
                     + star_bar
                 )
                 sys.exit(0)
         else:
             print(
                 star_bar +
-                "*\tThis collection should be visible, maybe the CREATE failed? (shouldn't happen, db should also be absent)"
+                "*\tThis collection should be visible, maybe the CREATE failed? (shouldn't happen, db should also be absent)\n"
                 + star_bar
             )
     else:
         print(
             star_bar +
-            "*\tThis database should be visible, this means the CREATE failed."
+            "*\tThis database should be visible, this means the CREATE failed.\n"
             + star_bar
         )
