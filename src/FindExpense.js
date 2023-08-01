@@ -2,34 +2,27 @@ import React from "react";
 import "./HomePage.css"
 import FindExpensesData from "./FindExpensesData";
 
+import Header from "./Header";
+import NewNav from "./NewNav";
+
+// FindExpenses Component
 const FindExpense = () => {
-
-
-
-
-    return(
+    return (
         <>
-        
-        <div className='header'>
-            <h1>Welcome to the expense tracker!</h1>
+            {/* Header Component */}
+            <Header />
+            {/* NavBar Component */}
+            <NewNav />
 
-        </div>
-        <br/>
-        <br/>
-        <div className='Mainborderpage'>
-            
-            <FindExpensesData></FindExpensesData>
-        
-            
+            <br />
+            <br />
+            <div className='Mainborderpage'>
 
-        </div>
-        
-
+                <FindExpensesData>
+                </FindExpensesData>
+            </div>
         </>
-
     );
-
-
-
 };
+
 export default FindExpense;

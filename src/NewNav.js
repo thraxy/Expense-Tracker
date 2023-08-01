@@ -1,26 +1,38 @@
+import React from 'react';
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import "./NewNav.css";
 
 export default function NewNav(){
-
-
-
     return(
-
-        <div className="container">
-        <div className="navbar">
-            <div className="navbar-inner">
+        // conmtainer to center the navbar horizontally
+        <div className="navbar-container">
+            {/* Main NavBar*/}
+            <div className="navbar">
+                {/* List of Nav items */}
                 <ul className="nav">
-                   <button className="InputPage"><Link className="InputPage2" to="/InputPage">InputPage</Link></button>
-                   <button className="ViewExpenses"><Link className="ViewExpenses2" to="/ViewExpenses">ViewExpenses</Link></button>
-                   <button className="FindExpenses"><Link className="FindExpenses2" to="/FindExpenses">FindExpenses</Link></button>
+                    {/* Nav item: inputpage */}
+                    <li>
+                        {/* Link to inputpage route */}
+                        <Link className="nav-link" to="/InputPage">
+                            Input Page
+                        </Link>
+                    </li>
+                    {/* Nav item: View Expenses */}
+                    <li>
+                        {/* Link to view expenses route */}
+                        <Link className="nav-link" to="/ViewExpenses">
+                            View Expenses
+                        </Link>
+                    </li>
+                    {/* Nav item: Find Expenses */}
+                    <li>
+                        {/* Link to find expenses route */}
+                        <Link className="nav-link" to="/FindExpenses">
+                            Find Expenses
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
-    
     );
-
-
-
 }

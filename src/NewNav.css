@@ -1,22 +1,40 @@
-.InputPage{
-    margin-right: 25px;
-
-
-}
-.InputPage2{
-
-    text-decoration: none;
-
-
-}
-.ViewExpenses{
-    margin-right: 25px;
-
-
+/* Styles for the navbar container (centering the navbar) */
+.navbar-container {
+    display: flex;
+    justify-content: center;
 }
 
-.ViewExpenses2{
-    text-decoration: none;
-
-
+/* Styles for the main navbar */
+.navbar {
+    background-color: #f0f0f0; /* Set the background color */
+    padding: 10px 20px; /* Add some padding around the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the navbar */
 }
+
+/* Styles for the list of navigation items */
+.nav {
+    list-style: none; /* Remove the default bullet points */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+    display: flex; /* Display the navigation items in a row */
+}
+
+    /* Styles for each individual navigation item (list item) */
+    .nav li {
+        margin-right: 20px; /* Add some spacing between the navigation items */
+    }
+
+/* Styles for the links within the navigation items */
+.nav-link {
+    text-decoration: none; /* Remove the default underline from the links */
+    color: #333; /* Set the color of the links */
+    font-size: 16px; /* Set the font size */
+    padding: 8px 12px; /* Add some padding around the links */
+    border-radius: 4px; /* Add rounded corners to the links */
+    transition: background-color 0.2s ease; /* Add a smooth transition effect for background color changes */
+}
+
+    /* Styles for the links when hovered */
+    .nav-link:hover {
+        background-color: #ddd; /* Change the background color when the links are hovered */
+    }

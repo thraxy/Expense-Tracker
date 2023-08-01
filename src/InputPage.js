@@ -1,34 +1,27 @@
 import React from "react";
 import "./HomePage.css"
-
 import Expenses from "./database.js";
-const InputPage = () => {
+
+import Header from "./Header";
+import NewNav from "./NewNav";
 
 
-
-
-    return(
+// Input Expenses Component
+const ViewExpenses = () => {
+    return (
         <>
-        
-        <div className='header'>
-            <h1>Welcome to the expense tracker!</h1>
+            {/* Header Component */}
+            <Header />
+            {/* NavBar Component */}
+            <NewNav />
 
-        </div>
-        <br/>
-        <br/>
-        <div className='Mainborderpage'>
-            <Expenses></Expenses>
-        
-            
-
-        </div>
-        
-
+            <br />
+            <br />
+            <div className='Mainborderpage'>
+                <Expenses></Expenses>
+            </div>
         </>
-
     );
-
-
-
 };
-export default InputPage;
+
+export default ViewExpenses;

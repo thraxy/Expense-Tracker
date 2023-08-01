@@ -4,36 +4,31 @@ import ViewExpenseData from "./ViewExpenseData";
 import Expenses from "./database.js";
 import { Component, useEffect, useState} from "react";
 import axios from "axios";
+
+import Header from "./Header";
+import NewNav from "./NewNav";
+
+
+
+
+// ViewExpenses Component
 const ViewExpenses = () => {
-
-
-    
-
-    
-
-
     return(
         <>
-        
-        <div className='header'>
-            <h1>Welcome to the expense tracker!</h1>
+            {/* Header Component */}
+            <Header />
+            {/* NavBar Component */}
+            <NewNav />
 
-        </div>
-        <br/>
-        <br/>
-        <div className='Mainborderpage'>
+            <br />
+            <br />
+            <div className='Mainborderpage'>
             
-        <ViewExpenseData></ViewExpenseData>
-            
-
-        </div>
-        
-
+                <ViewExpenseData>
+                </ViewExpenseData>
+            </div>
         </>
-
     );
-
-
-
 };
+
 export default ViewExpenses;
