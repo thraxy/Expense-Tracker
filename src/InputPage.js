@@ -7,7 +7,7 @@ import NewNav from "./NewNav";
 
 
 // Input Expenses Component
-const ViewExpenses = () => {
+const InputPage = () => {
     return (
         <>
             {/* Header Component */}
@@ -24,4 +24,4 @@ const ViewExpenses = () => {
     );
 };
 
-export default ViewExpenses;
+export default InputPage;

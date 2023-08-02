@@ -31,6 +31,13 @@ export default function NewNav(){
                             Find Expenses
                         </Link>
                     </li>
+
+                    <li>
+                        {/* Link to search expenses by date route */}
+                        <Link className="nav-link" to="/SearchByDate">
+                            Search By Date
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>

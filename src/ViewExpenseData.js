@@ -2,7 +2,7 @@ import {useState, useEffect } from "react";
 import axios from "axios";
 import xtype from 'xtypejs';
 import "./ViewExpenses.css";
-
+import Moment from "react-moment";
 
 export default function ViewExpenseData(){
 
@@ -154,6 +154,8 @@ export default function ViewExpenseData(){
                 <span>Expense Type: {selectData[key].Etype}</span>
                 <br/>
                 <span>Expense Price: ${selectData[key].Eprice}</span>
+                <br/>
+                <span>Expense Date: <Moment format="MM/DD/YYYY">{selectData[key].date}</Moment></span>
                 <br/>
                 <button onClick={()=> deleteExpense(selectData[key]._id, selectData[key].Etype)}>Delete</button>
 
