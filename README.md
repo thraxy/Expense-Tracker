@@ -1,97 +1,70 @@
-# Expense Tracker
+# Getting Started with Create React App
 
-Expense Tracker is a web application that helps you track your daily expenses, categorize them, and visualize your spending habits. It provides an intuitive interface for users to input their expenses and offer insightful charts to analyze their spending habits.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-https://boilerroomexpense.netlify.app/
+## Available Scripts
 
-## Table of Contents
-- [Features](#features)
-- [Dependencies](#dependencies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Resources](#resources)
+In the project directory, you can run:
 
+### `npm start`
 
-## Features 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Expense Input**: Enter your daily expenses, including the amount, category, and any additional notes.
-- **Expense Categorization**: Categorize your expenses into predefined categories for better organization.
-- **Visualization**: View charts and graphs that display your spending habits and patterns.  
-- **Category Filtering**: Filter expenses based on specific categories for focused analysis.
-- **Responsive Design**: Enjoy a seamless experience across different devices and screen sizes.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Dependencies
+### `npm test`
 
-- **React**: The core library for building user interfaces in React.
-- **React-DOM**: A package that serves as the entry point to the DOM(Document Object Model) and is used for rendering React components.
-- **React-Router**: A routing library for React applications that enables navigation and routing between different components/pages.
-- **Chart.js**: A popular charting library for creating interactive and visually appealing charts and graphs.
-- **Axios**: A promise-based HTTP client for making API requests from the browser.
-- **Bootstrap**: A CSS framework that provides a collection of styles, components, and utilities for building responsive and modern web interfaces.
-- **Font Awesome**: A library of scalable vector icons that can be customized and easily added to the application.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Installation
+### `npm run build`
 
-1. Clone the repository: 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-``` git clone https://github.com/thraxy/expense-tracker.git ```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2. Navigate to the project directory:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-``` cd expense-tracker ```
+### `npm run eject`
 
-3. Install the dependencies:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-``` npm install <dependencies>```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Usage 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Start development server:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-``` npm start ```
+## Learn More
 
-2. Open web browser to https://localhost:3000 to access the application.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-3. Use the Expense Tracker to input your expenses, categorize them, and explore the visualization features.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Contributing
+### Code Splitting
 
-### Step 1: Fork the repository
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Click on "Fork" at the top right corner of the repository page.
+### Analyzing the Bundle Size
 
-### Step 2: Clone the repository
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Clone the repository to your local machine:
+### Making a Progressive Web App
 
-``` git clone https://github.com/<your-username>/expense-tracker.git ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Step 3: Create a new branch
+### Advanced Configuration
 
-Navigate to the project directory:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-``` cd expense-tracker ```
+### Deployment
 
-Create a new branch for your feature/bug fix:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-``` git checkout -b feature/feature-name ```
+### `npm run build` fails to minify
 
-### Step 4: Make your changes and commit them
-
-Once completed the changes, stage and commit them with a commit message:
-
-``` git add . ```
-``` git commit -m "Add commit message" ```
-
-### Step 5: Push the changes
-
-Push your branch to your forked repository on Github:
-
-``` git push origin feature/feature-name ```
-
-## Resources
-
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
