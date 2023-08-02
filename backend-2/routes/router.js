@@ -35,8 +35,9 @@ router.post('/expenses', async(req, res) =>{
 
 router.get('/expenses', async(req, res) =>{
 
-    const users = schemas.Expenses;
-    const userData = await users.find({}).exec();
+    const expenses = schemas.Expenses;
+   
+    const userData = await expenses.find({}).sort({date: 1}).exec();
     
     if(userData){
         res.send(JSON.stringify(userData));
