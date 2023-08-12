@@ -1,0 +1,111 @@
+/* Common styles for the header */
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #b0e7e3; /* Seafoam green background color */
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px; /* Add rounded corners to the seafoam box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Logo {
+    width: 80px;
+    height: auto;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px; /* Add padding to the links */
+    border-radius: 40px; /* Add rounded corners to the links */
+    color: #22524c; /* Change link color to fit the theme */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color */
+}
+
+.nav-link:hover {
+    background-color: #6eb6b0; /* Hover background color to fit the theme */
+    color: #fff; /* Change text color on hover */
+}
+
+.LoginButton {
+    text-decoration: none!important;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to the button */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: #fff; /* Font color for the login button */
+    background-color: #6eb6b0; /* Seafoam green background color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    cursor: pointer;
+    border-radius: 30px; /* Add rounded corners to the button */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+.LoginButton:hover {
+    background-color: #59a19e; /* Hover color for the button */
+}
+
+/* Burger menu styles */
+.BurgerMenu {
+    display: none;
+    cursor: pointer;
+    order: 1; /* Set the order to 1 to place it on the right side */
+}
+
+.MenuIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.BurgerMenu.open .MenuIcon {
+    /* Remove the increase in size when the menu is clicked */
+    transform: scale(1);
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Navbar styles */
+.Navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    order: 0; /* Set the order back to 0 to place it on the left side */
+}
+
+/* Styles for the navigation links when the burger menu is open */
+.Navbar.open .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .BurgerMenu {
+        display: block;
+    }
+}
